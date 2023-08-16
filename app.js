@@ -29,7 +29,7 @@ app.post("/", (req, res) => {
   } catch (err) {
     console.log(err);
   }
-  res.send(result);
+  res.json({ data: result });
 });
 
 const port = process.env.port || 3000;
