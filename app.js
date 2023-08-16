@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const turf = require("@turf/turf");
+const cors = require('cors');
 const circos = require("./data/circonscriptions-legislatives.json");
 
 app.use(cors())
