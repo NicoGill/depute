@@ -3,6 +3,8 @@ const app = express();
 const turf = require("@turf/turf");
 const circos = require("./data/circonscriptions-legislatives.json");
 
+app.use(cors())
+
 app.use(express.json({extended: false}));
 
 app.get("/", (req, res) => {
