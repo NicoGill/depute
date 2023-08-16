@@ -3,7 +3,6 @@ const app = express();
 const port = 3000;
 const turf = require("@turf/turf");
 const circos = require("./data/circonscriptions-legislatives.json");
-const { findCirco } = require("./modules/checkPoint");
 
 app.use(express.json());
 
